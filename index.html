@@ -11,23 +11,34 @@
 
 <body class="wrapper">
   <header class="header">
-    <h1 class="header-name">
-      <a href="#">Moon Travel</a>
-    </h1>
-    <nav>
-      <ul class="menu">
-        <li><a href="#Moon">Moon</a></li>
-        <li><a href="#">Bonuses</a></li>
-        <li><a href="#">Tariffs</a></li>
-        <li><a href="#News">News</a></li>
-        <li><a href="#">Business</a></li>
-        <li><a href="#">Insurance</a></li>
-        <li><a href="#FAQ">FAQ</a></li>
-      </ul>
+    <nav class="navbar">
+      <div class="container">
+        <div class="navbar__wrap">
+          <div class="hamb">
+            <div class="hamb__field" id="hamb">
+              <span class="bar"></span> 
+              <span class="bar"></span>
+              <span class="bar"></span>
+            </div>
+          </div>
+          <a href="#" class="logo" id="Moon">Moon Travel</a>
+          <ul class="menu" id="menu">
+            <li><a href="#Moon">Moon</a></li>
+            <li><a href="#">Bonuses</a></li>
+            <li><a href="#">Tariffs</a></li>
+            <li><a href="#News">News</a></li>
+            <li><a href="#">Business</a></li>
+            <li><a href="#">Insurance</a></li>
+            <li><a href="#FAQ">FAQ</a></li>
+          </ul>
+          <div class="lang">
+            <a href="#">EN</a>
+          </div>
+        </div>
+      </div>
     </nav>
-    <div class="lang">
-      <a href="#">EN</a>
-    </div>
+    <div class="popup" id="popup"></div>
+
   </header>
 
   <main>
@@ -35,9 +46,8 @@
     <section class="section section-title">
       <div class="title-img-wrapper">
         <img src="./assets/head-sect.jpg" alt="Люди в космосі">
-        
+        <h2>Жорж Мельес мріяв, а ми відправимо</h2> 
       </div>
-      <h2 class="title-description">Жорж Мельес мріяв, а ми відправимо</h2>
     </section>
 
     <section class="section section-form">
@@ -61,7 +71,7 @@
           </div>
           <div class="element-wrapper">
             <label for="point-of-departure" class="label-text">пасижири</label>
-            <input type="text" id="point-of-departure" placeholder="кількість">
+            <input type="text" id="point-of-departure" placeholder="кількість" class="input">
           </div>
           <div class="element-wrapper">
             <button class="button button-zakaz">Заказати білети</button>
@@ -91,33 +101,37 @@
         <div class="space-img-wrapper">
           <div class="moon-wrapper">
             <img class="moon-img" src="./assets/Full_moon.png" alt="Місяць">
+            <div class="test-wrapper">
+              <div class="apollo-point-wrapper apollo-point-wrapper-11">
+                <div class="apollo-point">Apollo 11</div>
+                <div class="point"></div>
+              </div>
+              <div class="apollo-point-wrapper apollo-point-wrapper-12">
+                <div class="apollo-point">Apollo 12</div>
+                <div class="point"></div>
+              </div>
+      
+              <div class="apollo-point-wrapper apollo-point-wrapper-14">
+                <div class="apollo-point">Apollo 14</div>
+                <div class="point"></div>
+              </div>
+              <div class="apollo-point-wrapper apollo-point-wrapper-15">
+                <div class="apollo-point">Apollo 15</div>
+                <div class="point"></div>
+              </div>
+              <div class="apollo-point-wrapper apollo-point-wrapper-16">
+                <div class="apollo-point">Apollo 16</div>
+                <div class="point"></div>
+              </div>
+              <div class="apollo-point-wrapper apollo-point-wrapper-17">
+                <div class="apollo-point">Apollo 17</div>
+                <div class="point"></div>
+              </div>
+            </div>
+            
           </div>
         </div>
-        <div class="apollo-point-wrapper apollo-point-wrapper-11">
-          <div class="apollo-point">Apollo 11</div>
-          <div class="point"></div>
-        </div>
-        <div class="apollo-point-wrapper apollo-point-wrapper-12">
-          <div class="apollo-point">Apollo 12</div>
-          <div class="point"></div>
-        </div>
 
-        <div class="apollo-point-wrapper apollo-point-wrapper-14">
-          <div class="apollo-point">Apollo 14</div>
-          <div class="point"></div>
-        </div>
-        <div class="apollo-point-wrapper apollo-point-wrapper-15">
-          <div class="apollo-point">Apollo 15</div>
-          <div class="point"></div>
-        </div>
-        <div class="apollo-point-wrapper apollo-point-wrapper-16">
-          <div class="apollo-point">Apollo 16</div>
-          <div class="point"></div>
-        </div>
-        <div class="apollo-point-wrapper apollo-point-wrapper-17">
-          <div class="apollo-point">Apollo 17</div>
-          <div class="point"></div>
-        </div>
               
         <div class="moon-description">
           Ви можете повернути місяць
@@ -188,6 +202,8 @@
     </div>
 
   </footer>
+
+<script src="./index.js"></script>
 </body>
 
 </html>
