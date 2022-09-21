@@ -783,17 +783,38 @@ body {
 
   /*  */
 
+  .space-img-wrapper{
+    width: 420px;
+    height: 420px;
+  }
+
+  .moon-img{
+    width: 450px;
+  }
+
+  .apollo-point-wrapper-12{
+    position: absolute;
+    top: 45px;
+    right: 160px;
+  }
+
+  .apollo-point-wrapper-11{
+    position: absolute;
+    top: 22px;
+    left: 55px;
+  }
+
+
+
+  .apollo-point-wrapper-17{
+    position: absolute;
+    bottom: 50px;
+    left: 70px;
+  }
+
   
 
 }
-
-
-
-
-
-
-
-
 
 
 @media screen and (max-width: 390px) {
